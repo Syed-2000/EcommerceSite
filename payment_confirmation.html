@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="stylesheet" href="Styles/slider.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="starability-minified/starability-all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/shop.css" />
+    <link rel="stylesheet" href="Styles/my_account.css" />
+    <link rel="stylesheet" href="Styles/my_order.css" />
+    <link rel="stylesheet" href="Styles/payment_confirmation.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="containr">
+      <!--- strt containr -->
+      <div class="container">
+        <!---Container start-->
+        <div class="top">
+          <!--top start-->
+          <div class="left">
+            <button>Welcome</button>
+            <p>Items sold: 0</p>
+          </div>
+          <div class="right">
+            <div><a href="registration.html"> Register </a></div>
+            <div><a href="my_account.html"> My Account </a></div>
+            <div><a href="#"> Go to Cart </a></div>
+            <div><a href="#"> Login </a></div>
+          </div>
+        </div>
+        <!--top end -->
+      </div>
+      <!---Container end-->
+    </div>
+    <!---end containr-->
+    <div class="navbar">
+      <!------navbar start----->
+      <div class="container">
+        <!---Container start-->
+
+        <div class="logo">
+          <!---logo start-->
+          <img src="pic/logo.jpg" alt="logo" style="width:100px" />
+        </div>
+        <!---logo end-->
+        <div class="menu">
+          <!---menu start-->
+          <div><a href="index.html"> HOME </a></div>
+          <div><a href="shop.html"> SHOP </a></div>
+          <div><a href="my_account.html"> MY_ACCOUNT</a></div>
+          <div><a href="shop_cart.html"> SHOPPING_CART</a></div>
+          <div><a href="#"> ABOUT_US</a></div>
+          <div><a href="#"> SERVICES</a></div>
+          <div><a href="contact_Us.html"> CONTACT_US</a></div>
+        </div>
+        <!--menu end-->
+        <div class="seacrh">
+          <!----search start-->
+          <button><i class="fa fa-search"></i></button>
+          <button>
+            <i class="fa fa-shopping-cart"></i> 0 items in the cart
+          </button>
+        </div>
+        <!----search end-->
+      </div>
+      <!---Container end-->
+    </div>
+    <!-----navbar end----->
+    <div class="home_shop">
+      <!----home_shop start-->
+      <div class="container">
+        <p>Home > My Account</p>
+      </div>
+    </div>
+    <div class="twoPortionOfMyAcc">
+      <!-----twoPortionOfMyAcc start-->
+      <div class="container">
+        <!------container start-->
+        <div class="leftPortionOfMyAcc">
+          <!----leftPortionOfMyAcc start-->
+          <div class="leftPic">
+            <div>
+              <img
+                src="pic/myPic.jpg"
+                alt="myPic"
+                style="width:220px; height: 270px;"
+              />
+            </div>
+            <div>
+              <label for="name"> Name: Osama </label>
+            </div>
+          </div>
+          <div class="leftItems">
+            <div>
+              <a href="my_order.html"> <i class="fa fa-bars"></i> My Order </a>
+            </div>
+            <div>
+              <a href="pay_offline.html">
+                <i class="fa fa-bolt"></i> Pay Offline
+              </a>
+            </div>
+            <div>
+              <a href="#"> <i class="fa fa-user"></i> My Address </a>
+            </div>
+            <div>
+              <a href="edit_account.html">
+                <i class="fa fa-pencil"></i> Edit Account
+              </a>
+            </div>
+            <div>
+              <a href="change_pass.html">
+                <i class="fa fa-user"></i> Change Password
+              </a>
+            </div>
+            <div>
+              <a href="delete_acc.html">
+                <i class="fa fa-trash"></i> Delete Account
+              </a>
+            </div>
+            <div>
+              <a href="#"> <i class="fa fa-sign-out"></i> Logout </a>
+            </div>
+          </div>
+        </div>
+        <!----leftPortionOfMyAcc end-->
+        <div class="rightPortionOfMyAcc">
+          <!----rightPortionOfMyAcc start-->
+          <div class="container">
+            <div class="upperHeadOfOrder">
+              <!-----upperHeadOfOrder start-->
+              <div>
+                <h1><strong> Please Confirm Your Payment</strong></h1>
+              </div>
+            </div>
+            <!---upperHeadOfOrder end-->
+            <div class="formOfPayConfirm">
+              <form name="form1" action="#">
+                <div>
+                  <label for="invoice"> Invoice Number </label>
+                  <input
+                    type="text"
+                    class="inputOfContact"
+                    name="invoice"
+                    id="inputOfContact1"
+                  />
+                  <!-- <label for="tip" id="tooltip" style="visibility: hidden;"> you need to full this</label> -->
+                </div>
+                <div>
+                  <label for="Email"> Amount </label>
+                  <input
+                    type="text"
+                    class="inputOfContact"
+                    name="amout"
+                    id="inputOfContact2"
+                  />
+                </div>
+                <div>
+                  <label for="payment"> Select Payment Mode </label>
+                  <select name="payment" id="payMode">
+                    <option value="bankTransfer">Bank Transfer</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="Transection Number"> Transection Number </label>
+                  <input
+                    type="text"
+                    class="inputOfContact"
+                    name="trans"
+                    id="inputOfContact3"
+                  />
+                </div>
+                <div>
+                  <label for="Payment Date"> Payment Date </label>
+                  <input
+                    type="date"
+                    class="inputOfContact"
+                    name="payDate"
+                    id="inputOfContact4"
+                  />
+                </div>
+                <div>
+                  <button type="submit" onclick="borderColor()">
+                    Confirm Payment
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!----rightPortionOfMyAcc end-->
+      </div>
+      <!----container end-->
+    </div>
+    <!---twoPortionOfMyAcc end-->
+
+    <div class="footer">
+      <!------Footer start-->
+      <div class="container">
+        <div class="div1f">
+          <!--- start ---->
+
+          <ul>
+            <li><h2>Pages</h2></li>
+            <li>Shopping Cart</li>
+            <li>Contact Us</li>
+            <li>Shop</li>
+            <li>My Account</li>
+            <br />
+            <br />
+            <li><h2>User Section</h2></li>
+            <li>Resgister</li>
+            <li>Login</li>
+          </ul>
+        </div>
+        <!--- end---->
+        <div class="div2f">
+          <!--- start ---->
+
+          <ul>
+            <li><h2>Top Product Category</h2></li>
+            <li><a href="#"> Jacket </a></li>
+            <li><a href="#"> Accessories </a></li>
+            <li><a href="#"> Shoes </a></li>
+            <li><a href="#"> Coast </a></li>
+            <li><a href="#"> T-Shirts </a></li>
+          </ul>
+        </div>
+        <!--- end ---->
+        <div class="div3f">
+          <!--- start ---->
+
+          <ul>
+            <li><h2>Where to find us</h2></li>
+            <li>
+              <a href="#"> <b> Teehosting.com </b> </a>
+            </li>
+            <li><a href="#"> Karachi </a></li>
+            <li><a href="#"> Islamabad </a></li>
+            <li><a href="#"> Lahore </a></li>
+            <li><a href="#"> Faislabad </a></li>
+            <br />
+            <a href="#">Goto contact us page</a>
+          </ul>
+        </div>
+        <!--- end ---->
+        <div class="div4f">
+          <!--- start ---->
+          <h2>Get the news</h2>
+          <p>Subscribe here to get the news</p>
+          <input type="search" name="searchbox" id="searchFoot" />
+          <button>subscribe</button>
+          <br />
+          <h2>Stay In Touch</h2>
+          <a href="#"><i class="fa fa-facebook-square"></i></a>
+          <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          <a href="#"><i class="fa fa-twitter-square"></i></a>
+          <a href="#"><i class="fa fa-github-square"></i></a>
+          <a href="#"><i class="fa fa-skype"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-------FOOTER END------>
+  </body>
+</html>
